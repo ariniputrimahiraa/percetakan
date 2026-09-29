@@ -64,6 +64,7 @@ $data_kategori = mysqli_fetch_assoc($total_kategori);
             padding: 5px 15px 35px;
             border-bottom: 1px solid #333333;
             margin-bottom: 25px;
+            width: 80px;
         }
 
         .brand span {
@@ -520,9 +521,7 @@ $data_kategori = mysqli_fetch_assoc($total_kategori);
 
     <div class="brand">
 
-        <span>MAHIRA</span>
-
-        <h1>PRINTING</h1>
+        <img style="width: 180px;"  src="../assets/img/logo1.png" alt="">
 
     </div>
 

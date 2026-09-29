@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
+-- version 4.6.6
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Waktu pembuatan: 27 Sep 2026 pada 16.37
--- Versi server: 10.1.32-MariaDB
--- Versi PHP: 7.2.5
+-- Host: localhost
+-- Generation Time: Sep 29, 2026 at 08:13 AM
+-- Server version: 5.7.17-log
+-- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `toko_kue`
+-- Database: `percetakan-1`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `admin`
+-- Table structure for table `admin`
 --
 
 CREATE TABLE `admin` (
@@ -37,7 +35,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `admin`
+-- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`id`, `nama`, `username`, `password`, `created_at`) VALUES
@@ -46,7 +44,7 @@ INSERT INTO `admin` (`id`, `nama`, `username`, `password`, `created_at`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `produk`
+-- Table structure for table `produk`
 --
 
 CREATE TABLE `produk` (
@@ -61,48 +59,48 @@ CREATE TABLE `produk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `produk`
+-- Dumping data for table `produk`
 --
 
 INSERT INTO `produk` (`id`, `nama`, `kategori`, `deskripsi`, `harga`, `stok`, `gambar`, `created_at`) VALUES
-(1, 'Brownies Coklat', 'Brownies', 'Brownies coklat lembut dengan topping coklat premium.', '45000.00', 20, 'brownies.jpg', '2026-09-27 13:32:53'),
-(2, 'Cheese Cake', 'Cake', 'Cheese cake lembut dengan rasa keju yang creamy.', '65000.00', 15, 'cheesecake.jpg', '2026-09-27 13:32:53'),
-(3, 'Donat Coklat', 'Donat', 'Donat lembut dari bahan kentang asli dengan topping coklat yang masnis.', '30000.00', 25, 'donat.jpg', '2026-09-27 13:32:53');
+(11, 'Roll Up Banner', 'Advertising & Signage', 'test', '1000.00', 1000, '6abb386c21efc.png', '2026-09-29 04:02:52'),
+(12, 'ID Card Custom', 'Advertising & Signage', 'Test', '20000.00', 1000, '6abb388e67466.png', '2026-09-29 04:03:26'),
+(13, 'Lanyard Custom', 'Textile & Sablon', 'Test', '13000.00', 50, '6abb38db61e32.png', '2026-09-29 04:04:43'),
+(14, 'Sticker UV DTF', 'Custom & Souvenir', 'test', '25000.00', 12, '6abb39f7f2d5d.png', '2026-09-29 04:09:27'),
+(15, 'MUg Custom', 'Custom & Souvenir', 'test', '12000.00', 500, '6abb3f6965d32.png', '2026-09-29 04:32:41'),
+(16, 'Sablon DTF Printing', 'Textile & Sablon', 'test', '40000.00', 1000, '6abb3fa3d6f5f.png', '2026-09-29 04:33:39');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `admin`
+-- Indexes for table `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `username` (`username`);
 
 --
--- Indeks untuk tabel `produk`
+-- Indexes for table `produk`
 --
 ALTER TABLE `produk`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `admin`
+-- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
--- AUTO_INCREMENT untuk tabel `produk`
+-- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-COMMIT;
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
