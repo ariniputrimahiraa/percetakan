@@ -729,6 +729,41 @@ $query = mysqli_query(
 
         }
 
+        .sidebar-bottom {
+            position: absolute;
+            bottom: 25px;
+            left: 18px;
+            right: 18px;
+        }
+
+        .website-btn {
+            display: block;
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #444444;
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .website-btn:hover {
+            border-color: #ffd400;
+            color: #ffd400;
+        }
+
+        .logout-btn {
+            display: block;
+            padding: 12px;
+            text-align: center;
+            background: #ffd400;
+            color: #111111;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+
     </style>
 
 </head>
@@ -770,21 +805,17 @@ $query = mysqli_query(
     </nav>
 
 
-    <div class="sidebar-bottom">
+   <div class="sidebar-bottom">
 
-        <a href="../index.php">
-            Lihat Website
-        </a>
+            <a href="../index.php" class="website-btn">
+                Lihat Website
+            </a>
 
-        <a
-            href="logout.php"
-            class="logout"
-        >
-            Logout
-        </a>
+            <a href="logout.php" class="logout-btn">
+                Logout
+            </a>
 
-    </div>
-
+        </div>
 </aside>
 
 
