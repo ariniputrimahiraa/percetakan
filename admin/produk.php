@@ -776,10 +776,7 @@ $query = mysqli_query(
 <aside class="sidebar">
 
     <div class="brand">
-
-        <span>MAHIRA</span>
-
-        <h1>PRINTING</h1>
+ <img style="width: 180px;"  src="../assets/img/logo1.png" alt="">
 
     </div>
 
