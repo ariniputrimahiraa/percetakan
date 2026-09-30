@@ -573,36 +573,7 @@ RESPONSIVE
 
 @media(max-width: 768px) {
 
-    .nav-button {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-menu {
-        position: absolute;
-        top: 75px;
-        left: 0;
-        width: 100%;
-        padding: 20px 5%;
-        background: #111111;
-        display: none;
-        flex-direction: column;
-    }
-
-    .nav-menu.show {
-        display: flex;
-    }
-
-    .page-header {
-        padding: 130px 0 65px;
-    }
-
-    .page-header h1 {
-        font-size: 42px;
-    }
+   
 
     .about {
         padding: 70px 0;
@@ -676,10 +647,7 @@ RESPONSIVE
         font-size: 32px;
     }
 
-    .footer-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+    
 
     .copyright {
         margin-left: 0;
@@ -695,49 +663,7 @@ RESPONSIVE
 
 <!-- NAVBAR -->
 
-<header class="navbar" id="navbar">
-
-    <div class="container nav-content">
-
-        <a href="index.php" class="logo">
-        <img src="assets/img/logo1.png" alt="">
-    </a>
-
-        <nav class="nav-menu">
-
-            <a href="index.php">
-                Beranda
-            </a>
-
-            <a href="produk.php">
-                Produk
-            </a>
-
-            <a href="tentang.php" class="active">
-                Tentang Kami
-            </a>
-
-        </nav>
-
-        <a
-            href="https://wa.me/6288291614900"
-            target="_blank"
-            class="nav-button"
-        >
-            Pesan Sekarang
-        </a>
-
-        <button
-            class="menu-toggle"
-            id="menuToggle"
-            type="button"
-        >
-            ☰
-        </button>
-
-    </div>
-
-</header>
+<?php include "includes/header.php"; ?>
 
 
 <!-- PAGE HEADER -->
@@ -1039,28 +965,7 @@ RESPONSIVE
 
 <!-- FOOTER -->
 
-<footer>
-
-    <div class="container footer-content">
-
-        <div class="footer-logo">
-
-           <img src="assets/img/logo1.png" alt="">
-
-
-        </div>
-
-        <p>
-            Percetakan & Digital Printing
-        </p>
-
-        <p class="copyright">
-            © 2026 Mahira Printing. All rights reserved.
-        </p>
-
-    </div>
-
-</footer>
+<?php include "includes/footer.php"; ?>
 
 
 <!-- BACK TO TOP -->
